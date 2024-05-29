@@ -1,7 +1,7 @@
 // JavaScript
 // document.addEventListener('DOMContentLoaded', function () {
 //     const buttons = document.querySelectorAll('.filter-button');
-//     const images = document.querySelectorAll('.filter');
+//     const Images = document.querySelectorAll('.filter');
 
 //     buttons.forEach(button => {
 //         button.addEventListener('click', () => {
@@ -14,7 +14,7 @@
 //             button.classList.add('active');
 
 
-//             images.forEach(image => {
+//             Images.forEach(image => {
 //                 if (filter === 'all' || image.classList.contains(filter)) {
 //                     image.parentElement.style.display = 'block';
 //                 } else {
@@ -24,17 +24,17 @@
 //         });
 //     });
 
-//     // Trigger the "All" button click by default to show all images
+//     // Trigger the "All" button click by default to show all Images
 //     document.querySelector('[data-filter="all"]').click();
 // });
 
 
-// For Gallery page with filtered button of images
+// For Gallery page with filtered button of Images
 $(document).ready(function () {
     // Select all elements with the class 'filter-button'
     const $buttons = $('.filter-button');
     // Select all elements with the class 'filter'
-    const $images = $('.filter');
+    const $Images = $('.filter');
 
     // Add a click event listener to each button
     $buttons.on('click', function () {
@@ -46,8 +46,8 @@ $(document).ready(function () {
         // Add 'active' class to the clicked button
         $(this).addClass('active');
 
-        // Show or hide images based on the filter
-        $images.each(function () {
+        // Show or hide Images based on the filter
+        $Images.each(function () {
             if (filter === 'all' || $(this).hasClass(filter)) {
                 $(this).parent().show();
             } else {
@@ -56,7 +56,7 @@ $(document).ready(function () {
         });
     });
 
-    // Trigger the "All" button click by default to show all images
+    // Trigger the "All" button click by default to show all Images
     $('[data-filter="all"]').trigger('click');
 });
 
@@ -152,7 +152,7 @@ $(document).ready(function () {
                 // Display success message
                 $('#loadingIcon').hide();
                 $('#sendIcon').show();
-                $('#success-message').html('<img src="images/check.png" alt="Success" width="20px"> Your submission is successful and we will contact you soon. ')
+                $('#success-message').html('<img src="Images/check.png" alt="Success" width="20px"> Your submission is successful and we will contact you soon. ')
                 .css('color', 'green');
                 // Clear all validation messages
                 $('.validation-message').text('');
