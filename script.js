@@ -1,7 +1,7 @@
 // JavaScript
 // document.addEventListener('DOMContentLoaded', function () {
 //     const buttons = document.querySelectorAll('.filter-button');
-//     const Images = document.querySelectorAll('.filter');
+//     const images = document.querySelectorAll('.filter');
 
 //     buttons.forEach(button => {
 //         button.addEventListener('click', () => {
@@ -14,7 +14,7 @@
 //             button.classList.add('active');
 
 
-//             Images.forEach(image => {
+//             images.forEach(image => {
 //                 if (filter === 'all' || image.classList.contains(filter)) {
 //                     image.parentElement.style.display = 'block';
 //                 } else {
@@ -24,17 +24,17 @@
 //         });
 //     });
 
-//     // Trigger the "All" button click by default to show all Images
+//     // Trigger the "All" button click by default to show all images
 //     document.querySelector('[data-filter="all"]').click();
 // });
 
 
-// For Gallery page with filtered button of Images
+// For Gallery page with filtered button of images
 $(document).ready(function () {
     // Select all elements with the class 'filter-button'
     const $buttons = $('.filter-button');
     // Select all elements with the class 'filter'
-    const $Images = $('.filter');
+    const $images = $('.filter');
 
     // Add a click event listener to each button
     $buttons.on('click', function () {
@@ -46,8 +46,8 @@ $(document).ready(function () {
         // Add 'active' class to the clicked button
         $(this).addClass('active');
 
-        // Show or hide Images based on the filter
-        $Images.each(function () {
+        // Show or hide images based on the filter
+        $images.each(function () {
             if (filter === 'all' || $(this).hasClass(filter)) {
                 $(this).parent().show();
             } else {
@@ -56,7 +56,7 @@ $(document).ready(function () {
         });
     });
 
-    // Trigger the "All" button click by default to show all Images
+    // Trigger the "All" button click by default to show all images
     $('[data-filter="all"]').trigger('click');
 });
 
