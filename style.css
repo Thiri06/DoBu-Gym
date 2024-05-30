@@ -1,4 +1,3 @@
-
 * {
     font-family: Poppins, sans-serif;
 }
@@ -150,29 +149,6 @@
     color: yellow !important;
     padding-left: 8px;
 }
-/* style.css */
-.btn-home {
-    box-sizing: border-box;
-    padding: 10px 20px;
-    border: 2px solid transparent; /* Prevent border width change */
-    width: 230px; /* Fixed width */
-    height: 50px;
-    transition: all 0.3s ease; /* Smooth transitions */
-}
-
-.btn-home:active,
-.btn-home:focus,
-.btn-home:hover {
-    transform: none; /* No scaling */
-    box-shadow: none; /* No additional shadow */
-    outline: none; /* No outline */
-}
-.btn-ins{
-    box-sizing: border-box;
-    width: 230px; /* Fixed width */
-    height: 50px;
-    transition: all 0.3s ease; /* Smooth transitions */
-}
 
 /*Footer end*/
 
@@ -246,6 +222,38 @@
     }
 }
 
+.btn-home {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    /* Prevent border width change */
+    width: 230px;
+    /* Fixed width */
+    height: 50px;
+    transition: all 0.3s ease;
+    /* Smooth transitions */
+}
+
+.btn-home:active,
+.btn-home:focus,
+.btn-home:hover {
+    transform: none;
+    /* No scaling */
+    box-shadow: none;
+    /* No additional shadow */
+    outline: none;
+    /* No outline */
+}
+
+.btn-ins {
+    box-sizing: border-box;
+    width: 230px;
+    /* Fixed width */
+    height: 50px;
+    transition: all 0.3s ease;
+    /* Smooth transitions */
+}
+
 #course-overview-section {
     background-color: #37060D;
 }
@@ -290,14 +298,16 @@ html {
 
 .home-testimonial {
     background-color: #151a2f;
-    padding: 40px 0; /* Add padding instead of fixed height */
+    padding: 40px 0;
+    /* Add padding instead of fixed height */
 }
 
 .home-testimonial-bottom {
     margin-top: 0px;
     position: relative;
     width: 100%;
-    padding: 40px 0; /* Add padding instead of fixed height */
+    padding: 40px 0;
+    /* Add padding instead of fixed height */
 }
 
 .home-testimonial h2 {
@@ -308,16 +318,19 @@ html {
 
 .testimonial-inner {
     position: relative;
-    margin-top: 20px; /* Adjust margin for spacing */
+    margin-top: 20px;
+    /* Adjust margin for spacing */
 }
 
 .testimonial-pos {
-    margin-bottom: 20px; /* Adjust margin for spacing */
+    margin-bottom: 20px;
+    /* Adjust margin for spacing */
 }
 
 .testimonial-inner .tour-desc {
     border-radius: 5px;
-    padding: 20px; /* Adjust padding for spacing */
+    padding: 20px;
+    /* Adjust padding for spacing */
 }
 
 .color-grey-3 {
@@ -351,24 +364,28 @@ html {
 /* Media Queries for Responsive Design */
 @media (max-width: 767px) {
     .home-testimonial {
-        padding: 20px 0; /* Adjust padding for smaller screens */
+        padding: 20px 0;
+        /* Adjust padding for smaller screens */
     }
 
     .home-testimonial-bottom {
-        padding: 20px 0; /* Adjust padding for smaller screens */
+        padding: 20px 0;
+        /* Adjust padding for smaller screens */
     }
 
     .testimonial-inner {
-        margin-top: 10px; /* Adjust margin for smaller screens */
+        margin-top: 10px;
+        /* Adjust margin for smaller screens */
     }
 
     .testimonial-inner .tour-desc {
-        padding: 10px; /* Adjust padding for smaller screens */
+        padding: 10px;
+        /* Adjust padding for smaller screens */
     }
 }
 
 /* Homepage end */
-#coach-img{
+#coach-img {
     width: 100%;
     height: 500px;
 }
@@ -431,6 +448,7 @@ h5 {
     overflow: hidden;
     color: black;
 }
+
 .different-card {
     width: 80%;
     background: white;
@@ -441,6 +459,7 @@ h5 {
     overflow: hidden;
     color: black;
 }
+
 .fist {
     width: 20px;
     height: 20px;
@@ -550,4 +569,3 @@ h1 {
     font-weight: bold;
     margin-top: 40px;
 }
-/* Done */
